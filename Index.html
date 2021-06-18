@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: rgb(211, 247, 247);
+            border: 2px solid blue;
+            height: 550px;
+            width: 1500px;
+            padding: 10px 0px 0px 10px;
+        }
+        #container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-auto-rows: 2fr;
+            width: 1300px;  
+        }
+
+
+        .navbar{background-color: rgb(175, 177, 180);
+        padding: 10px;
+        border: 2px solid black;
+
+        }
+
+        .search{background-color: black;
+        color: blanchedalmond;
+        }
+
+        .option_box{padding-top: 15px;
+        padding: 10px;
+        margin-top: 3px;
+        background-color: rgb(63, 219, 219);}
+
+        .filter{padding-right: 40px;
+        margin-left: 50px;
+        margin-right: 5px;}
+
+
+        .box-1 {
+            background-color: cornflowerblue;
+            border: 1px solid blue;
+            text-align: center;
+            list-style: none;
+        }
+        .box{ background-color: rgb(211, 247, 247);
+            border: 1px solid blue;
+            border-right: none;
+            border-left: none;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+        }
+        .box-2{
+            background-color: rgb(183, 237, 241);
+            border: 1px solid blue;
+            border-right: none;
+            border-left: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+        }
+        li{
+            justify-content: center;
+            text-align: center;
+            margin: auto 0px;
+            
+        }
+        button{
+            background-color: rgb(211, 247, 247);
+            border: 1px solid blueviolet;
+            padding: 10px 10px;
+            margin: 10px;
+            border-radius: 8px;
+            font-size: 17px;    
+        }
+        button:hover{
+            background-color: rgb(69, 214, 224);
+            color: white;
+        }
+        button img{
+            height: 15px;
+            width: 15px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <input type="search" name="search_bar" placeholder="search titles" > 
+        <input class="search" type="button" value="search">
+    </nav>
+
+    <div class="option_box">
+        <select name="actions" id="actions">
+            <option value="actions">Actions  </option>
+            <option value="archive">Archive</option>
+            <option value="delete">Delete</option>
+        </select>
+
+        <input type="button" value="Apply">
+
+        <select class="filter" name="filers" id="filters" size="1px" >
+            <option value="actions">Genre </option>
+            <input type="button" value="Filter">
+
+        </select>
+    </div>
+
+    <div class="body">
+    <div id="container">
+        
+        <div class="box-1"><b>Paintings</b></div>
+        <div class="box-2">
+                <li><b>Tittle</b></li>
+                <li><b>Artist</b></li>
+                <li> <b>Year</b></li>
+                <li><b>Center</b></li>
+        </div>
+        <div class="box">
+           
+        <li><img src="dom.jpg" alt=""></li>
+        <li>Death of marat</li>
+        <li>David,Jacues-Louis</li>
+        <li>1793</li>
+        <li>Romanticism</li>
+        <li><button><img src="star.jpg" alt="">Edit</button></li></div>
+
+        <div class="box">
+            
+            <li><img src="2.jpg" alt=""></li>
+        <li>Portrait of Eleanor of Toledo</li>
+        <li>Bronzine,Agnolo</li>
+        <li>1543</li>
+        <li>Mannerism</li>
+        <li><button><img src="star.jpg" alt="">Edit</button></li></div>
+
+        <div class="box">
+            
+            <li><img src="3.jpg" alt=""></li>
+        <li>Liberaty leading the people</li>
+        <li>Delacroix,Eugene</li>
+        <li>1830</li>
+        <li>Romantism</li>
+        <li><button><img src="star.jpg" alt="">Edit</button></li></div>
+
+        <div class="box">
+            
+            <li><img src="4.jpg" alt=""></li>
+        <li>Arrangment in gray and black</li>
+        <li>Whistler,James </li>
+        <li>1871</li>
+        <li>Realism</li>
+        <li><button><img src="star.jpg" alt="">Edit</button></li></div>
+        <div class="box">
+            
+            <li><img src="5.jpg" alt=""></li>
+        <li>Mademoiselle Caroline Riviere</li>
+        <li>Ingres,Jean-Auguste</li>
+        <li>1806</li>
+        <li>Neo-classicism</li>
+        <li><button><img src="star.jpg" alt="">Edit</button></li></div>
+    </div>
+</div>
+</body>
+
+</html>
